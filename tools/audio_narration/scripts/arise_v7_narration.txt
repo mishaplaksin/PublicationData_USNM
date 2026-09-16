@@ -1,0 +1,724 @@
+# ARISE v7 — audio narration script
+#
+# Format read by synthesize.py:
+#   [HOST] ...        line spoken by the HOST voice
+#   [SKEPTIC] ...     line spoken by the SKEPTIC voice
+#   [PAUSE 800]       silence, in milliseconds
+#   [[Chapter name]]  chapter marker (not spoken; used for progress + chapter log)
+#   # ...             comment (ignored)
+#
+# Source: ARISE_review_v7.docx (Plaksin, Golgher, Totsis-Sat, de Picciotto,
+# Shapira, Zadicario — Insightec Ltd). Written for listening, not for citation:
+# numbers are spoken in words, references are named rather than parenthesised.
+
+[[Cold open]]
+
+[HOST] Two numbers. Hold on to both of them, because everything that follows is an attempt to explain why they are so far apart.
+
+[PAUSE 500]
+
+[HOST] The first number is one hour. If you take a modern focused ultrasound rig, point it at the human motor cortex, and deliver eighty seconds of theta-burst stimulation, you get a real, measurable increase in cortical excitability. It lasts about an hour. Point it at deep structures in a monkey, and functional connectivity shifts for a bit over an hour. Sonicate human cortex and the local GABA concentration drops for at least fifty minutes. Different labs, different targets, different readouts — the same ceiling. Tens of minutes to hours, and then the brain goes back to what it was doing.
+
+[PAUSE 400]
+
+[HOST] The second number is ninety days.
+
+[PAUSE 600]
+
+[HOST] Eight people with severe opioid use disorder. One twenty-minute session of two hundred and twenty kilohertz focused ultrasound, aimed at the bilateral nucleus accumbens. Cue-induced craving drops immediately — and a mean reduction of ninety-one percent is still there at the ninety-day follow-up. Not just for opioids. For methamphetamine and cocaine too.
+
+[SKEPTIC] One session. Ninety days. And the rest of the field gets sixty minutes.
+
+[HOST] That's the puzzle. And the tempting answer is the boring one: they used more energy, so they got more effect. Bigger hammer, bigger dent.
+
+[SKEPTIC] Which would make it a dose-response curve, and not very interesting.
+
+[HOST] Right. The paper we're going through argues something different. It argues that somewhere between those two sets of experiments, the ultrasound stops doing one thing and starts doing another. Not more of the same. A different physical mechanism, reaching a different biological machine. The authors call that second mode ARISE — acoustic radiation pressure-induced stretch excitation.
+
+[HOST] And what makes this draft worth an hour of your attention is that it is the seventh version, and it spends a remarkable amount of its length explaining why the earlier versions were wrong.
+
+[PAUSE 900]
+
+[[Chapter 1: Two durability problems, not one]]
+
+[HOST] Start with the mistake the paper corrects first, because it reorganises everything.
+
+[HOST] The original version of this argument said, roughly: low-intensity ultrasound produces effects that fade, high-intensity ultrasound produces effects that stick, therefore durability is a signature of the high-intensity regime.
+
+[SKEPTIC] And that's false.
+
+[HOST] It's false, and it's falsified by work the authors themselves cite. Zeng and colleagues, in two thousand twenty-two, got LTP-like plasticity from eighty seconds of theta-burst ultrasound at completely conventional intensity. Then Zhang and colleagues took that effect apart pharmacologically. It was blunted by an NMDA receptor antagonist. Blunted by an L-type calcium channel blocker. Blunted by a sodium channel blocker, and by a GABA-A positive allosteric modulator.
+
+[SKEPTIC] That's a Hebbian fingerprint. That's textbook synaptic plasticity.
+
+[HOST] It is exactly that. And then Kim and colleagues, in mice, went further: patterned low-intensity ultrasound produced plasticity in both directions. Intermittent theta-burst gave LTP-like changes. Continuous theta-burst gave LTD-like changes. Dependent on NMDA receptors, on BDNF and TrkB signalling, and on new protein synthesis. With astrocytic TRPA1 and bestrophin-1 doing real work in the mechanism.
+
+[HOST] So durability at low intensity isn't merely possible. It's demonstrated, mechanistically dissected, and — this is the key word — pattern-gated.
+
+[SKEPTIC] Then what's left of the regime argument?
+
+[HOST] What's left is a split. The paper's move is to say there are two independent routes to a lasting effect, and the earlier draft had jammed them together.
+
+[HOST] Route one is temporal pattern. If your stimulus is shaped like something the brain already uses to induce plasticity — theta bursts, for instance — then you borrow the brain's own machinery. And you can do that at essentially any amplitude that's enough to move firing rates at all. Pattern is cheap. Every modality can do it.
+
+[HOST] Route two is effector amplitude. If your stimulus gets large enough to grab hold of a biological transducer that simply isn't available at lower amplitude, you can reach signalling pathways that evoked activity never touches. That's the claim for ARISE. And the transducer in question is mechanotransduction: direct gating of mechanically sensitive ion channels, and the adhesion, cytoskeletal and transcriptional machinery downstream of them.
+
+[SKEPTIC] So the durability question splits in two.
+
+[HOST] It splits cleanly. Why does one session of patterned conventional ultrasound cap out at about an hour? And is there a second, amplitude-gated road that could plausibly buy you ninety days?
+
+[HOST] The first question, it turns out, has already been answered — by the transcranial magnetic stimulation people, decades ago. We'll come back to that. The second question is the actual thesis of the paper.
+
+[PAUSE 900]
+
+[[Chapter 2: Physics and biology are different questions]]
+
+[HOST] There's a structural point the paper makes early, and it's the kind of thing that quietly dissolves a lot of arguments.
+
+[HOST] The mechanism debate in this field has been run as a cage match. Radiation pressure versus intramembrane cavitation. Capacitive drive versus mechanosensitive channel gating. Pick a side.
+
+[SKEPTIC] And the paper says that's a category confusion.
+
+[HOST] It says those are two different levels of explanation being treated as one. On the physics side, ultrasound can act through acoustic radiation pressure and the streaming flows its gradients drive. Through intramembrane cavitation — nanoscale gas pockets inside the oily core of the membrane. Through ordinary bubble cavitation. Or through absorption-driven heating.
+
+[HOST] On the biology side, any of those can change excitability by altering membrane capacitance, by gating mechanosensitive or heat-sensitive channels, or by both at once.
+
+[SKEPTIC] Many-to-many.
+
+[HOST] Many-to-many. So the productive question isn't which mechanism is correct. It's which physical mechanism dominates in which region of the intensity-frequency plane — and which biological route it is quantitatively strong enough to engage once it's there.
+
+[HOST] There's a lovely example of why this matters. For years, evidence implicating mechanosensitive channels in ultrasound responses — Piezo1, TRPA1, TRPC1, TRPC6, the TRPP channels — was read as evidence against cavitation-based mechanisms. As though channel gating needed a different physical cause.
+
+[SKEPTIC] It doesn't.
+
+[HOST] It doesn't at all. Intramembrane cavitation generates local leaflet tensions of ten to sixteen millinewtons per metre under completely ordinary parameters — five hundred kilohertz, five hundred kilopascals. That is several times above Piezo1's half-activation tension. Cavitation gates mechanosensitive channels perfectly well. So the channel findings tell you about the biological route. They tell you almost nothing about the physical driver.
+
+[PAUSE 400]
+
+[HOST] And there's one more pattern in that literature that the paper leans on. Across mammalian knockout and knockdown studies, deleting an implicated channel reduces the ultrasound response. It doesn't abolish it. Conditional Piezo1 knockout in mouse motor cortex significantly cut calcium responses, limb movement, EMG responses — without eliminating any of them.
+
+[SKEPTIC] Which is what you'd expect if several routes operate in parallel.
+
+[HOST] Exactly what a multi-route framework predicts, and exactly what a single-route account doesn't.
+
+[HOST] But there is one striking exception, and the paper thinks it has been under-weighted. TRPC6. Pharmacological inhibition and genetic deficiency of TRPC6 almost completely abolished ultrasound-evoked responses in the work by Matsushita and colleagues.
+
+[SKEPTIC] Why does that channel in particular matter?
+
+[HOST] Because TRPC6 isn't just another calcium-permeable mechanosensor. It's a canonical driver of the CaMKIV to CREB axis. Overexpress TRPC6 and you get more CaMKIV and CREB phosphorylation, and more hippocampal dendritic growth. Knock it down and you suppress both, and dendritic development is impaired. Block CaMKIV or CREB with dominant-negative constructs and the whole effect goes away. TRPC6 activation also drives BDNF.
+
+[HOST] So if you had to nominate, in advance, the one ultrasound-implicated channel most likely to convert a mechanical push into a transcription-dependent, long-lasting structural change — you would nominate TRPC6. And it also happens to be the channel whose blockade most completely kills the response.
+
+[SKEPTIC] That's a suspiciously good coincidence.
+
+[HOST] The paper thinks so too. Hold the thought; it pays off twice more.
+
+[PAUSE 900]
+
+[[Chapter 3: Where does a stretch become enough?]]
+
+[HOST] Now the quantitative part. If the claim is that bulk radiation pressure physically stretches tissue hard enough to open a mechanosensitive channel, you have to put a number on it. Where does that begin?
+
+[HOST] Here's the chain. Time-averaged radiation pressure acts as a body force — force per unit volume — proportional to the acoustic intensity. Push on a viscoelastic solid like brain and you get displacement, and therefore strain. In particular, areal strain: the fractional increase in the area of a patch of membrane.
+
+[HOST] The anchor comes from finite-element modelling of a viscoelastic brain under radiation-pressure body forces. At three point three watts per square centimetre — bog-standard research intensity — you get a peak areal strain of about four times ten to the minus four. Four hundredths of a percent.
+
+[HOST] Multiply that by the area-expansion modulus of a lipid bilayer, zero point two four newtons per metre, and you get a tension of about zero point one millinewtons per metre.
+
+[SKEPTIC] And Piezo1 needs how much?
+
+[HOST] One to five millinewtons per metre for half activation. So conventional intensity sits one to two orders of magnitude below the threshold. And because everything is linear in intensity, you can invert it and ask: at what intensity does the stretch become enough?
+
+[HOST] Two routes bracket the answer.
+
+[PAUSE 300]
+
+[HOST] Route A is the channel-level route. Scale up from the Piezo1 half-activation band, and you reach one to five millinewtons per metre somewhere between thirty-four and one hundred and seventy-two watts per square centimetre.
+
+[SKEPTIC] Note that the earlier draft said fifty-five.
+
+[HOST] It did, and the appendix owns it. Fifty-five is not recoverable from the stated anchor and the stated modulus. The correct lower bound is thirty-four, and that's what the paper's own Table One was already showing. It's the kind of internal inconsistency a reviewer finds in ninety seconds, and the authors found it first.
+
+[PAUSE 300]
+
+[HOST] Route B is completely different in character. Instead of reasoning about channels in reconstituted membranes, go and mechanically poke a real neuron. Gaub and colleagues, and later Kasuba and colleagues, pressed cultured neurons with an atomic-force-microscope bead over about half a second — a timescale comparable to an ultrasound pulse — and found the mechanical threshold for an electrophysiological response. Converted to areal strain, it's about three point five percent, with a range from half a percent to six and a half percent.
+
+[HOST] Scale that back to intensity and you land near two hundred and ninety watts per square centimetre.
+
+[SKEPTIC] So: thirty-four on one route, two hundred and ninety on the other. That's a factor of nine.
+
+[HOST] Which is why the paper stops calling it a threshold and calls it a transition band. Channel-level gating becomes conceivable from around thirty-four. It's comfortably established by one hundred and seventy-two on Route A. And the whole-cell mechanical threshold arrives somewhere around two hundred and ninety to three hundred and thirty on Route B.
+
+[HOST] So the ARISE regime gets defined as beginning at roughly thirty-four to one hundred and seventy-two watts per square centimetre in situ, at carrier frequencies of about zero point two to zero point seven megahertz, and running upward until you hit sustained cavitation or thermally significant heating.
+
+[PAUSE 500]
+
+[SKEPTIC] Wait. You've computed a strain at one carrier frequency and you're applying it across a range. The radiation-pressure body force is proportional to the absorption coefficient, and absorption scales with frequency. At two hundred and twenty kilohertz the force per unit intensity should be smaller.
+
+[HOST] That is the first question any reviewer asks, and the answer is one of the nicer results in the paper.
+
+[HOST] Yes, the body force falls with frequency. But the strain depends on the force and on the size of the region the force acts over. For a quasi-static body force distributed over a characteristic length L in a medium of shear modulus G, displacement goes as force times L squared over G, and strain goes as force times L over G.
+
+[HOST] Now: for a diffraction-limited focus, L is proportional to the wavelength. So L goes as one over frequency.
+
+[SKEPTIC] Force goes up with frequency, length goes down with frequency —
+
+[HOST] — and they cancel. To first order the strain is independent of carrier frequency. The linear growth in absorption is exactly offset by the linear shrinkage of the focal region the force is acting on. What the strain actually depends on is intensity, brain shear modulus, and focal geometry.
+
+[SKEPTIC] That's convenient.
+
+[HOST] It's convenient, and it's also falsifiable, which is better. Because it generates a prediction we'll get to later — one that turns this from a convenience into a three-way discriminator between mechanisms. Remember: frequency cancellation. It comes back.
+
+[PAUSE 400]
+
+[HOST] Before we leave the numbers, one honest caveat that the paper flags itself. That finite-element anchor comes from a mouse brain. A mouse brain is about ten millimetres across — comparable to, or smaller than, the focal spot of a sub-megahertz human system. So the computed strain field is dominated by boundary conditions at the skull and by the confined geometry. Transferring it to a human deep target, where the focal-to-organ size ratio differs by more than an order of magnitude, is an extrapolation. The paper's own list of what would most strengthen the framework starts with: do this computation in a realistic human head model.
+
+[PAUSE 900]
+
+[[Chapter 4: Where the clinic actually sits]]
+
+[HOST] So where does the ninety-day protocol actually sit on that axis? This is the detective section, and it hinges on a square root of two.
+
+[HOST] The disclosed parameters: two hundred and twenty kilohertz. Eighty to one hundred watts emitted. Hundred-millisecond pulses. Twenty-seven percent total duty cycle, spread across eight sub-targets — so three point three percent per individual spot. And a manufacturer's estimated root-mean-square pressure at target of one point five to two point five megapascals.
+
+[SKEPTIC] And the published in-situ pressures?
+
+[HOST] One point three to two point four megapascals. Which looks like it agrees. It doesn't.
+
+[HOST] For a sinusoidal field, peak pressure is root two times RMS. So one point five to two point five RMS gives two point one to three point five megapascals peak — and that is precisely the "in water" peak rarefactional range the investigators themselves quote. The published in-situ figures of one point three to two point four are that same range after derating. Twice.
+
+[SKEPTIC] So the numbers everyone has been using are double-derated.
+
+[HOST] And the paper argues the defensible in-situ figure is two point five to three point five megapascals. Resolving which pressure is which turns out to be the pivotal step in the entire analysis, and once you do it, two independent estimation routes that used to disagree start agreeing.
+
+[PAUSE 400]
+
+[HOST] Route one: power balance. Take one hundred watts emitted. Assume twenty-five percent skull transmission at two hundred and twenty kilohertz. Assume a three-millimetre focal diameter. That's twenty-five watts deposited over zero point zero seven one square centimetres — about three hundred and fifty-three watts per square centimetre. Convert to pressure and you get three point three megapascals peak, two point three RMS.
+
+[HOST] Route two: pressure inversion. Take the corrected in-situ range, two point five to three point five megapascals, convert through intensity equals pressure squared over twice the acoustic impedance, and you get two hundred and three to three hundred and ninety-eight watts per square centimetre. Midpoint at two hundred and ninety-two.
+
+[SKEPTIC] Three hundred and fifty-three sits inside two hundred and three to three hundred and ninety-eight.
+
+[HOST] It does. And this is a genuine convergence, because the inputs are unrelated. One side uses emitted acoustic power, skull transmission and focal geometry. The other side uses the disclosed pressure calibration. Nothing is shared.
+
+[PAUSE 400]
+
+[HOST] And now the coincidence the paper flags, and flags carefully.
+
+[HOST] At the three-megapascal midpoint, the intensity is two hundred and ninety-two watts per square centimetre. The corresponding tissue areal strain is three point five four percent.
+
+[HOST] The whole-cell mechanical threshold, derived completely independently from poking cultured neurons with an AFM bead, is an areal strain of three point five percent.
+
+[PAUSE 600]
+
+[SKEPTIC] Three point five four against three point five.
+
+[HOST] The clinical midpoint lands on the independently measured whole-cell mechanical threshold. And to be clear about what that is and isn't: it's a coincidence worth reporting, not a proof. But it's the kind of coincidence that makes you want to keep reading.
+
+[PAUSE 400]
+
+[HOST] What the paper will not say — and this is the discipline that makes version seven better than version one — is that the protocol is comfortably above threshold. Route B's own uncertainty band is roughly forty to five hundred and forty watts per square centimetre. That's wider than the clinical envelope. So the honest statement is: the clinical protocol falls in the neighbourhood of the threshold, and whether it exceeds it depends on force-transmission factors a continuum model cannot resolve.
+
+[SKEPTIC] That's a much weaker claim.
+
+[HOST] It's a much weaker claim, and it's the one that survives review. There's a lesson in the draft history here: the strong version of the claim was more exciting and would have been destroyed by the first competent referee.
+
+[PAUSE 400]
+
+[HOST] But here's what does stay robust, and it's worth being blunt about. Two hundred to four hundred watts per square centimetre, versus under ten watts per square centimetre. Whatever the precise threshold is, those are not neighbouring points on a dose-response curve. They differ by two orders of magnitude on the axis that determines whether mechanotransduction is available at all.
+
+[HOST] And there's an elegant reason the separation survives even if the absolute numbers don't. Whatever unknown fraction of imposed tissue strain actually reaches a mechanoreceptor, that fraction is the same in both regimes. So it cancels in the ratio. The two-orders-of-magnitude gap is robust to the very transmission problem that makes the absolute thresholds uncertain.
+
+[PAUSE 400]
+
+[HOST] Two more features of the disclosed protocol matter for attribution. MR thermometry confirmed no temperature rise at the target — so thermal transduction is off the table empirically, not by modelling. And the investigators state that their neuromodulation programme was never intended to produce a lesion.
+
+[PAUSE 900]
+
+[[Chapter 5: The correction that matters most]]
+
+[HOST] Now we get to what the authors themselves call the most important scientific correction in the whole review. And it starts with an argument that sounds devastating and is completely wrong.
+
+[HOST] Look at the top of that table. Areal strains of three and a half to four point two percent at clinical parameters. Now: the lytic strain of a phospholipid bilayer — the point at which it tears — corresponds to only about three percent area expansion.
+
+[SKEPTIC] Then the clinical protocol should be rupturing membranes. At exactly the parameters that are apparently curing people.
+
+[HOST] That's the wrong reading, and the reason it's wrong is the key to the entire mechanism.
+
+[HOST] Those lytic figures — critical tensions of roughly one to twenty-five millinewtons per metre depending on lipid composition and loading rate — are measured on reservoir-free lipid vesicles under micropipette aspiration. They are properties of a bare bilayer being genuinely dilated.
+
+[HOST] A living cell is not a bare bilayer. And the decisive evidence is sitting right inside the framework: those AFM-bead experiments that anchor Route B had cultured neurons sustaining three and a half percent areal strain — six and a half percent at the top of the range — reversibly, repeatedly, with intact electrophysiology. Not lysis.
+
+[SKEPTIC] So any argument predicting rupture is refuted by the very measurements the framework is built on.
+
+[HOST] Precisely. And three well-understood mechanisms explain the gap. They come into play in series as strain rises.
+
+[PAUSE 300]
+
+[HOST] First, undulation smoothing. A bilayer doesn't start genuinely stretching until you're above about half a millinewton per metre. Below that, area change is accommodated by ironing out thermal and cytoskeleton-driven ripples, at essentially no cost in lipid dilation. And resting membrane tension is around zero point zero two five millinewtons per metre — twenty-fold below that crossover.
+
+[HOST] Second, membrane reservoirs. Microvilli, membrane folds, caveolae. They store excess area and unfold under tension. Caveolae disassemble within seconds of a tension increase — they're a mechanosensitive area buffer. Take away a functional caveolar reservoir and cells become markedly more fragile under mechanical stress. Membrane folding factors are of order six, and cells can extend projected surface area by up to about threefold under osmotic loading.
+
+[HOST] Third, cortical load sharing. The actin cortex and its membrane linkers bear load in parallel with the bilayer and redistribute it. So an imposed tissue deformation gets partitioned: cytoskeletal strain first, then shape change at roughly constant surface area, and only lastly true bilayer dilation.
+
+[SKEPTIC] So the cytoskeleton is the reason several percent strain isn't destructive.
+
+[HOST] That's exactly it. And the consequence is that the effective area-expansion modulus of a real cell is dominated by reservoir unfolding, and sits one to two orders of magnitude below the bare-bilayer value of zero point two four.
+
+[PAUSE 400]
+
+[HOST] So multiplying a cell-surface areal strain by the bilayer modulus is a category error — and, interestingly, in both directions. It doesn't predict lysis. And it doesn't deliver the bilayer tension that would gate a force-from-lipid channel either.
+
+[SKEPTIC] So the tension column in Table One is —
+
+[HOST] Bookkeeping. Tissue areal strain multiplied by a bare-bilayer modulus. The paper says it should be labelled as such throughout. Which is an unusual thing to do to your own central table.
+
+[PAUSE 500]
+
+[HOST] And here's why the authors think this makes the argument stronger rather than weaker. It changes the architecture in four ways.
+
+[HOST] One. Route B becomes the primary anchor, and Route A the secondary — the reverse of the earlier draft. Bead indentation measures what mechanical stimulus a real neuron needs, with its real cortex, its real reservoir, its real channel complement. It already integrates the transmission problem that Route A simply ignores. Route A's apparent precision was illusory.
+
+[HOST] Two. The two "conservatisms" the earlier draft invoked point the same way — and it's the unfavourable way. Using an upper-bound modulus is conservative for the negative claim that conventional intensity cannot gate channels. But it's anti-conservative for the positive claim that the clinic clears threshold. Same with the finite-element model: it over-predicts measured MR-ARFI displacements by two- to threefold, so its strains are upper bounds, so the derived intensity thresholds are lower bounds. Both corrections push the true ARISE onset to higher intensity.
+
+[SKEPTIC] The draft presented those as supporting the claim.
+
+[HOST] It did. They don't.
+
+[HOST] Three. Routes A and B were never independent. That bead-derived areal strain of three point five percent was itself obtained by taking an inferred tension of about eight point four millinewtons per metre and dividing by the same zero point two four modulus. It's a tension expressed as a strain. The two routes share a modulus. Their agreement is reassuring, but it is not independent corroboration, and the earlier claim of "a convergence of independently derived quantities" overstated it.
+
+[SKEPTIC] Though the other convergence — power balance against pressure inversion — does hold.
+
+[HOST] That one genuinely involves unrelated inputs. It stands.
+
+[PAUSE 400]
+
+[HOST] And four — this is the payoff — the cortical load-sharing picture makes a real cell-biological prediction.
+
+[HOST] If the bilayer is protected by reservoir and cortex, then gating happens wherever there's the least reservoir to draw on and the most curvature-driven local stress. So the first structures recruited, as intensity climbs, should be the thinnest and most curved ones. Astrocytic exploratory processes. Unmyelinated axons. Dendritic spines and filopodia. Not somatic membrane, which is rich in microvilli and caveolae.
+
+[SKEPTIC] That inverts the role of the cytoskeleton.
+
+[HOST] Completely. The cortex isn't only what protects the bilayer. It's also what transmits and concentrates force. It's the route by which force reaches channels that aren't gated by bilayer tension alone — Piezo2, and the TRPC family. Including TRPC6.
+
+[HOST] So the mechanism the framework should nominate isn't uniform area dilation. It's force-from-filament.
+
+[SKEPTIC] And is there independent support for that?
+
+[HOST] Three separate findings. Chi and colleagues localised functional Piezo1 specifically to the exploratory processes of astrocytes, and argued that astrocytic morphology is essentially a mechano-surveillance system. Kim and colleagues found astrocytic TRPA1 and bestrophin-1 mattered for patterned-ultrasound plasticity. And Kasuba and colleagues showed that mechanosensation within neuronal networks is differential at subcellular resolution — different compartments, different thresholds.
+
+[HOST] So the framework predicts glia-first, process-first recruitment. Which reframes ARISE as a glial-and-fine-structure, force-from-filament phenomenon — not a somatic membrane-stretch phenomenon. And it's testable.
+
+[PAUSE 500]
+
+[HOST] One last twist in this section, and it's my favourite piece of the paper. The mechanical limit hasn't disappeared. It's been relocated.
+
+[HOST] Reservoir capacity is large but finite. And refilling it — caveolar reassembly, exocytic area supply, microvilli reforming — takes seconds to minutes. Now: a twenty-minute session delivers roughly ten thousand pulses.
+
+[SKEPTIC] So you could be spending reservoir faster than you restore it.
+
+[HOST] And if you are, then at constant acoustic exposure the fraction of strain borne by the bilayer — the true membrane tension — climbs over the course of the session.
+
+[HOST] That replaces an invalid lysis argument with a valid and much more interesting one, and it makes two predictions. Effect magnitude should drift within a session in a way instantaneous intensity doesn't predict. And the right dose variable is cumulative mechanical work, not spatial-peak pulse-average intensity.
+
+[SKEPTIC] Which no current exposure metric captures.
+
+[HOST] Not one. Not even the ITRUSST reporting set. And it tells you where the genuine mechanical safety margin lives: not at the bilayer at four percent strain, but at the point of reservoir exhaustion under repeated loading. Which is a function of pulse count and inter-pulse interval as much as amplitude.
+
+[PAUSE 900]
+
+[[Chapter 6: The sign error]]
+
+[HOST] Second major correction. This one is about a plus and a minus, and it changes the clinical story.
+
+[HOST] The channels implicated in ultrasound responses are mostly calcium-permeable. Piezo1, TRPC1, TRPC6, the TRPP channels, TRPV4 — all admit calcium. And calcium is the canonical decision variable for synaptic plasticity: the amplitude and duration of the calcium transient decide whether you get potentiation, depression, or nothing.
+
+[HOST] The earlier draft reasoned: ARISE delivers a large, spatially extensive, sustained calcium elevation. That's the input plasticity cascades are built to read. Therefore ARISE should produce CaMKII-dependent potentiation. LTP.
+
+[SKEPTIC] And the classical calcium-control hypothesis predicts the opposite.
+
+[HOST] The exact opposite. Calcineurin and the phosphatase cascade have higher calcium affinity and slower kinetics than CaMKII. So brief, large calcium transients favour LTP. Modest, prolonged elevations favour LTD and depotentiation.
+
+[HOST] A sustained, moderate, spatially extensive, mechanoreceptor-mediated calcium influx is, by the textbook rule, a recipe for depression. Not potentiation.
+
+[SKEPTIC] And from the mechanoreceptor side?
+
+[HOST] Reinforced. Chronic TRPV4 activation impairs LTP and reduces spine density. TRPV4 signalling downstream of PAR2 produces hippocampal LTD.
+
+[PAUSE 500]
+
+[SKEPTIC] So the paper's central mechanism predicts the wrong sign.
+
+[HOST] Here's the thing. For this indication, it predicts the right sign. It's the mechanism you would want.
+
+[HOST] Cocaine and opioid exposure potentiate glutamatergic synapses onto D1-type medium spiny neurons in the accumbens, by inserting GluA2-lacking AMPA receptors. That potentiation is what supports sensitisation, cue-induced seeking, and the incubation of craving.
+
+[HOST] And reversing it — depotentiating those synapses, removing the atypical AMPA receptors through mGluR-dependent mechanisms — durably abolishes the associated behaviour. Pascoli and colleagues did it optogenetically. Creed and colleagues did it with pharmacologically refined deep brain stimulation.
+
+[SKEPTIC] So the therapeutic target in the accumbens is depotentiation.
+
+[HOST] Depotentiation. Not potentiation. So an intervention whose biophysics predisposes it toward LTD-like plasticity in that structure is mechanistically aligned with the clinical outcome — not at odds with it. And the alignment is specific: the reported effect is a reduction in cue-induced craving, which is exactly the readout that depotentiating cortico-accumbens synapses abolishes.
+
+[PAUSE 400]
+
+[HOST] Three things that reframing buys you. It replaces a sign error with the textbook rule. It connects an ultrasound result to the best-characterised durable-reversal mechanism in the entire addiction literature. And it makes the framework indication-specific in a useful way.
+
+[SKEPTIC] Meaning if you wanted potentiation —
+
+[HOST] — say, motor cortex for stroke rehabilitation — you'd need a different temporal pattern to flip the sign. Which is testable. And which is exactly what Kim and colleagues showed is achievable at low intensity by pattern alone.
+
+[PAUSE 900]
+
+[[Chapter 7: Four literatures]]
+
+[HOST] The ultrasound data at the relevant intensities are thin. There's basically one clinical programme. So the argument that ARISE should consolidate can't be carried by ultrasound data alone. The paper's strategy is to read four literatures against each other.
+
+[HOST] We've done the first: at conventional intensity, ultrasound durability is pattern-gated and Hebbian.
+
+[PAUSE 300]
+
+[HOST] Second literature: transcranial magnetic stimulation. And this is the cleanest calibration available for what a single session of patterned non-invasive stimulation can do.
+
+[HOST] Theta-burst TMS delivers six hundred pulses in forty seconds and produces excitability changes lasting about an hour. NMDA-dependent, BDNF-dependent. Very well characterised.
+
+[SKEPTIC] So how do you actually get durable clinical effects with TMS?
+
+[HOST] Not by turning up the amplitude. By repetition and massing. Standard repetitive TMS for depression needs twenty to thirty-six daily sessions. Accelerated protocols deliver ten sessions a day for five days.
+
+[SKEPTIC] So roughly fifty sessions.
+
+[HOST] Roughly fifty. And that has a genuinely awkward implication for the accumbens result — one the earlier draft didn't address.
+
+[SKEPTIC] If fifty sessions of theta-burst TMS are needed for durable benefit in depression, then a single twenty-minute ultrasound session producing a ninety-day effect isn't just quantitatively better.
+
+[HOST] It's categorically stranger. And that's a burden on the framework, not a triumph.
+
+[HOST] There is one feature of the protocol that partially reconciles it, though. The clinical session spreads a twenty-seven percent total duty cycle across eight sub-targets — three point three percent per spot — over twenty minutes. From the perspective of any single spot, that's not one continuous exposure. It's a long, sparse, distributed train. Which starts to look a little like massing and spacing delivered inside a single session.
+
+[PAUSE 500]
+
+[HOST] Third literature: deep brain stimulation. And this contains what the authors regard as the single most important external result for the whole argument — and the earlier draft didn't cite it at all.
+
+[HOST] The baseline fact about DBS is that its effects are stimulation-locked. Turn off a thalamic stimulator and tremor comes back within seconds to minutes. Intraoperative microstimulation of the thalamic Vim nucleus suppresses tremor only during the train. Nothing lasting afterwards.
+
+[HOST] Now. Creed, Pascoli and Lüscher, in two thousand fifteen. Optogenetic twelve-hertz stimulation of prefrontal inputs to accumbens D1 medium spiny neurons activates mGluR signalling, removes the GluA2-lacking AMPA receptors, reverses cocaine-evoked potentiation, and abolishes locomotor sensitisation. Durably.
+
+[HOST] And the same physical stimulation, without the pharmacological manipulation that engages the mGluR-dependent depotentiation rule, produced only transient effects.
+
+[PAUSE 500]
+
+[SKEPTIC] Same stimulus. Same energy. Transient or permanent depending on whether a plasticity rule was engaged.
+
+[HOST] That's the inference, and it's precise and transferable: durability is not a function of delivered energy. It is a function of whether the stimulus engages a synaptic plasticity rule in the target circuit.
+
+[SKEPTIC] Which is the paper's thesis, demonstrated in a different modality.
+
+[HOST] In a different modality, in the same brain structure, for the same class of behaviour. The appendix notes its absence from the earlier draft was "conspicuous." I'd agree.
+
+[PAUSE 400]
+
+[HOST] There's a second DBS result that comes in from another angle. The tremor-suppressing effect of thalamic DBS depends substantially on astrocytes releasing ATP, which gets converted to adenosine acting at A1 receptors. So astrocytic purinergic signalling is already established as a mechanism of a clinically approved neuromodulation therapy.
+
+[SKEPTIC] Which matters because the glia-first prediction lands in the same place.
+
+[HOST] Exactly the same place.
+
+[PAUSE 500]
+
+[HOST] Fourth literature: mechanical stimulation of neural tissue. And this is where the earlier draft was most unnecessarily timid — it treated mechanotransduction as a novel and slightly speculative route to lasting change.
+
+[SKEPTIC] And the mechanobiology literature says?
+
+[HOST] It says the opposite. Mechanical and adhesion signalling isn't an alternative to synaptic plasticity. It's an obligatory component of it. Four lines of evidence.
+
+[HOST] One. Integrin signalling is required for LTP consolidation. Threshold theta-burst stimulation causes a rapid, long-lasting increase in filamentous actin in dendritic spines. Function-blocking antibodies to beta-one integrins eliminate both the actin polymerisation and the stabilisation of potentiation.
+
+[HOST] Two — and this is the existence proof. Ucar and colleagues, in Nature, two thousand twenty-one. Take a glass pipette. Gently, transiently push on a presynaptic bouton. Evoked glutamate release goes up markedly, SNARE complex assembly increases, and both effects persist for more than twenty minutes.
+
+[SKEPTIC] A purely mechanical stimulus durably potentiating a synapse.
+
+[HOST] In brain tissue. And independently of cytosolic calcium — it depends on SNARE assembly and bouton actin polymerisation.
+
+[HOST] Three. Astrocytic mechanotransduction is required for hippocampal LTP. Piezo1 in the exploratory processes of astrocytes mediates mechanically evoked calcium responses and ATP release. Delete astrocytic Piezo1 and you get reduced hippocampal volume, reduced brain weight, severely impaired adult neurogenesis, and impaired LTP.
+
+[HOST] Four. Mechanoreceptor gating drives transcription-dependent, month-scale structural change. That's the TRPC6 to CaMKIV to CREB to BDNF axis again, promoting hippocampal dendritic growth — blocked by dominant-negative CaMKIV or CREB.
+
+[PAUSE 400]
+
+[SKEPTIC] And the caution?
+
+[HOST] The paper puts it in the text rather than waiting for a referee to put it in a report. Sign and durability depend on which channel, which cell type, what dose, what duty cycle. Chronic TRPV4 activation impairs LTP, reduces spine density, and decreases NMDA receptor subunit expression. Mechanotransduction is not automatically good for you.
+
+[PAUSE 500]
+
+[HOST] Put the four literatures together and you get the framework, and it's two-dimensional rather than one.
+
+[HOST] Axis one: temporal pattern. It determines whether an endogenous plasticity rule gets recruited, and the sign of the resulting change. It works at any amplitude sufficient to modulate firing. It's accessible to every modality.
+
+[HOST] Axis two: effector route and amplitude. It determines which biological transducers are available at all. At conventional intensity, the accessible route is evoked activity and its Hebbian consequences. In the ARISE regime, direct mechanotransduction opens up — channel gating, adhesion signalling, cytoskeletal signalling.
+
+[SKEPTIC] And the claim of the review sits where?
+
+[HOST] Precisely on axis two, and it can now be stated without overreach. Ultrasound in the ARISE regime is the only non-invasive, spatially targeted way to deliver a controlled mechanical dose to a chosen deep brain structure. And mechanical dose is a demonstrated input to synaptic consolidation.
+
+[PAUSE 900]
+
+[[Chapter 8: The kinetic objection]]
+
+[HOST] Now, a serious problem with the mechanism as originally stated — and four ways out.
+
+[HOST] The original argument leaned on sustained gating across the whole membrane during each hundred-millisecond pulse. The contrast with intramembrane cavitation was about geometry and time: cavitation delivers ten to sixteen millinewtons per metre, well above threshold, but only within and immediately around the oscillating gas pocket, over a tiny fraction of total membrane area, and only in phase with the acoustic cycle. Radiation pressure, by contrast, loads an extended domain quasi-statically for a hundred milliseconds.
+
+[SKEPTIC] So it's not about the presence of supra-threshold tension. It's about its integral over area and time.
+
+[HOST] Exactly. A given number of channels held open for a hundred milliseconds across an extended domain admits far more charge than the same channels gated in microsecond bursts over a small area fraction.
+
+[SKEPTIC] Except Piezo1 inactivates. Tens of milliseconds. It's an intrinsic property of the channel.
+
+[HOST] And that guts the "sustained gating over a hundred milliseconds" version of the argument. The paper concedes it, and offers four resolutions.
+
+[HOST] First: endogenous Piezo1 kinetics aren't the kinetics you measure in an overexpression system. Endogenous Piezo1 currents in several cell types show drastically slowed inactivation relative to over-expressed Piezo1. Endothelial Piezo1 doesn't inactivate under sustained flow at all — it responds continuously until the flow stops.
+
+[HOST] Second: the channels that matter for durability may not be Piezo1 in the first place. TRPC6, TRPC1, the TRPP channels, TRPV4 — all have slower activation and far less pronounced inactivation. And TRPC6, remember, is both the channel whose blockade most completely abolishes ultrasound responses and the one with the most direct route to transcription.
+
+[SKEPTIC] Third time that channel has come up.
+
+[HOST] Third time. It's doing a lot of work in this paper.
+
+[HOST] Third resolution: pulse trains recover inactivation. At three point three percent duty cycle per sub-target, the inter-pulse interval is long compared to Piezo1 deactivation. So each pulse arrives at a largely recovered channel population. Integration happens across pulses over twenty minutes, not within a single pulse.
+
+[HOST] And fourth: the calcium-independent mechanical route sidesteps the question entirely. If mechanical potentiation of release works through SNARE assembly and actin polymerisation — as Ucar and colleagues showed — channel inactivation kinetics are simply not the relevant constraint.
+
+[PAUSE 400]
+
+[HOST] So the central claim gets recast. Not "sustained whole-membrane gating over a hundred-millisecond pulse." Instead: repeated, quasi-static, multi-compartment mechanical loading, integrated over roughly ten thousand pulses in a twenty-minute session, transduced by slowly inactivating mechanoreceptors and by calcium-independent mechanical routes.
+
+[SKEPTIC] Longer. Less quotable.
+
+[HOST] And much harder to knock over.
+
+[PAUSE 500]
+
+[HOST] There's one more capability here worth naming, because it's both the framework's biggest selling point and its biggest problem.
+
+[HOST] Every electromagnetic modality recruits calcium indirectly — through evoked activity, and therefore through the target circuit's own coincidence-detection machinery. Repetitive TMS and DBS can only strengthen or weaken synapses that are active.
+
+[HOST] ARISE, if the mechanism is as described, delivers calcium directly. Non-Hebbian. It doesn't need the circuit to be active.
+
+[SKEPTIC] That's a real capability. You could reach hypoactive, deafferented, pathologically silent circuits. And glial and vascular compartments that electrical stimulation barely touches.
+
+[HOST] And it's also the specificity problem. If the mechanism is non-Hebbian, the framework offers no account of how the intended synapses — rather than every mechanosensitive structure in the focal volume — get selectively modified.
+
+[SKEPTIC] You can't have it both ways.
+
+[HOST] You can't, and the paper lists it in the limitations rather than hiding it.
+
+[PAUSE 900]
+
+[[Chapter 9: The converse argument]]
+
+[HOST] Now the half of the paper that makes it a review rather than a position piece. And it argues against the field's instincts.
+
+[HOST] The implicit assumption almost everywhere is that higher intensity is better, and that low-intensity work is a compromise forced on us by safety limits.
+
+[SKEPTIC] And for the dominant scientific use of ultrasound —
+
+[HOST] — establishing causal brain-behaviour relationships — that assumption is exactly backwards. The conventional regime isn't a degraded ARISE. For mapping, it is the superior regime. And superior for reasons that follow from the very same physics.
+
+[HOST] A causal probe has to satisfy five requirements. It must not durably alter the system it's interrogating, or every measurement contaminates the next. Its biological effect must be spatially confined to the intended volume — not merely to the acoustic focus. Its effects must be time-locked to the stimulation window. It must be graded and reversible, so you can build dose-response functions. And it must be repeatable within a cumulative exposure budget.
+
+[SKEPTIC] And ARISE?
+
+[HOST] Fails or degrades on all five. By construction. Let's take the sharpest two.
+
+[PAUSE 400]
+
+[HOST] Spatial resolution first. Focal dimensions scale with wavelength. At two hundred and twenty kilohertz the wavelength in brain is seven millimetres, and the diffraction-limited lateral focal width is about three and a half. Which is precisely why the clinical protocol has to spread energy across eight sub-targets to cover a bilateral structure.
+
+[HOST] Go up to one to one and a half megahertz and the focus drops to roughly one to two millimetres.
+
+[SKEPTIC] But you can only afford megahertz carriers at low intensity.
+
+[HOST] Because volumetric heat deposition scales as the product of absorption and intensity, and absorption scales with frequency. At three to ten watts per square centimetre and one megahertz, the thermal budget is negligible. At two hundred to four hundred watts per square centimetre and one megahertz, it is not.
+
+[HOST] Which gives you a structural constraint, and I think it's the single most useful sentence in the paper:
+
+[PAUSE 300]
+
+[HOST] High spatial resolution and high acoustic intensity are not simultaneously available in the brain.
+
+[PAUSE 400]
+
+[HOST] The conventional regime can afford megahertz carriers and millimetre foci. The ARISE regime is confined to sub-megahertz carriers and multi-millimetre foci. And for mapping, where the entire reason to use ultrasound instead of TMS is spatial precision with deep access, that's decisive. A regime that gives up a factor of five to ten in linear resolution — a hundred to a thousandfold in focal volume — has given up the reason you chose ultrasound.
+
+[PAUSE 500]
+
+[HOST] And then there's a subtler point the authors believe hasn't been articulated before. Spatial resolution of the acoustic field is necessary but not sufficient. What matters is confinement of the biological effect.
+
+[HOST] The cavitation route is intensity-confined. Intramembrane cavitation amplitude is a local, instantaneous function of acoustic pressure at the point of action. So the biological effect tracks the acoustic focus and falls off with the pressure field.
+
+[HOST] The radiation-pressure route is not confined in the same way. Radiation pressure acts as a body force. It produces tissue displacement and strain. And a transient body force in a viscoelastic solid launches shear waves — which propagate away from the focus at one to three metres per second, carrying mechanical strain millimetres to centimetres beyond it.
+
+[SKEPTIC] So the mechanical stimulus is delivered over a volume larger and less well defined than the acoustic focus.
+
+[HOST] Shear-wave leakage. The very thing that makes ARISE a good actuator makes it a blurry probe. For mapping, the effective spatial confinement of the conventional regime is better than its acoustic focus suggests, and the ARISE regime's is worse.
+
+[PAUSE 400]
+
+[HOST] Same story on timing. Causal mapping increasingly needs effects time-locked at tens of milliseconds — to probe the timing of a decision, the latency of a percept, the phase of an oscillation.
+
+[HOST] The cavitation route is intrinsically fast: capacitive displacement currents follow the acoustic envelope within the acoustic cycle. Sub-millisecond onset and offset.
+
+[HOST] The radiation-pressure route is intrinsically slow: quasi-static strain builds over the viscoelastic response time of tissue, and decays on cytoskeletal and transcriptional timescales.
+
+[SKEPTIC] A probe whose rise time is set by tissue viscoelasticity and whose decay is set by transcription is not a temporally precise probe.
+
+[HOST] And is, by exactly the same token, a good actuator. That's the whole argument in one sentence.
+
+[PAUSE 500]
+
+[HOST] The paper turns this into a parameter prescription, which is more useful than a preference. For causal mapping: carrier frequency as high as depth and skull transmission allow, zero point five to one and a half megahertz, to maximise resolution — affordable only at low intensity. Intensity well below the ARISE onset, under about ten watts per square centimetre in situ. Short sonications, deliberately non-patterned — actively avoid theta-burst structures unless plasticity induction is what you're studying. Inter-stimulus intervals long relative to any offline effect, with explicit order counterbalancing.
+
+[SKEPTIC] And verify memorylessness rather than assume it.
+
+[HOST] That's the one I'd underline. Run an explicit stationarity check — interleaved baseline probes, test whether effect magnitude depends on trial index — and report it as a methods result. Plus full ITRUSST standardised reporting of in-situ pressure, intensity, and mechanical index, with uncertainty.
+
+[PAUSE 400]
+
+[HOST] And one honest caution attached to that prescription: online causal effect sizes in the conventional regime are small, and null results are real. A well-powered study targeting human lateral geniculate nucleus, auditory-masked, with simulation-verified targeting, found nothing.
+
+[PAUSE 500]
+
+[HOST] Finally — and this is what convinces me the distinction is real — it isn't specific to ultrasound. Every neuromodulation modality that has matured has split into a probe mode and an actuator mode. And in every case the probe mode is the low-amplitude, non-patterned, reversible one.
+
+[HOST] TMS: single and paired pulses for mapping and chronometry; repetitive and theta-burst protocols for therapy. Electrical: intraoperative microstimulation for mapping; chronic DBS for therapy. Optogenetics: brief single pulses for connectivity; twelve-hertz or theta-burst trains for inducing plasticity.
+
+[SKEPTIC] And the microstimulation case is the instructive one.
+
+[HOST] It's the best one. The fact that thalamic Vim microstimulation produces no lasting tremor suppression is usually reported as a negative result about mechanism. For mapping it is the essential positive property. It's why electrical microstimulation is the gold standard: it tells you what a structure does without changing what it will do next.
+
+[HOST] So the engineering corollary is that no single parameter set optimises both. High effector amplitude, low carrier frequency, patterned trains, long pulses, sustained loading — everything that maximises plasticity induction is exactly what degrades spatial resolution, spatial confinement, temporal precision and reversibility.
+
+[PAUSE 900]
+
+[[Chapter 10: What could kill it]]
+
+[HOST] Now the competing explanations. And the paper takes them seriously, including two the earlier draft simply omitted.
+
+[HOST] Cavitation first — the most serious physical alternative. At two hundred and twenty kilohertz, mechanical index values in this regime sit above the conventionally accepted non-significant-risk limit of one point nine. A two-megapascal peak negative pressure gives a mechanical index around four point three. At three point three megapascals it's seven point zero.
+
+[SKEPTIC] Not six point eight, as the earlier draft said.
+
+[HOST] Corrected in the appendix. And the honest position on cavitation cuts both ways. It establishes that cavitation is physically accessible in this regime, so you can't exclude it a priori as a contributor. But it also indicates that when cavitation did occur in this programme, it was detectable — by passive monitoring and by imaging.
+
+[PAUSE 300]
+
+[HOST] Thermal effects are excluded empirically: MR thermometry showed no temperature increase at the target, and temperature elevations below about a quarter of a degree can't produce detectable thermal neuromodulation anyway.
+
+[HOST] Though there's a numerical correction here too, and it's a nice example of the kind of error that matters. The earlier draft said the absorption coefficient at two hundred and twenty kilohertz is about zero point zero five nepers per centimetre. But zero point two three decibels per centimetre per megahertz, times zero point two two megahertz, gives zero point zero five one decibels per centimetre — which is zero point zero zero five eight nepers per centimetre. A factor of eight point seven, from conflating decibels with nepers.
+
+[SKEPTIC] And since the radiation-pressure body force is proportional to absorption —
+
+[HOST] — that unit slip propagates straight into the mechanism. The draft also called two hundred and twenty kilohertz "an order of magnitude" below typical research frequencies. Against five hundred kilohertz, it's a factor of two point three.
+
+[PAUSE 400]
+
+[HOST] Indirect auditory activation is a real confound in rodent work, but a poor candidate for a ninety-day reduction in cue-induced craving in humans.
+
+[HOST] Then the two additions. First: sub-detection-threshold blood-brain barrier and neurovascular effects. At in-situ peak negative pressures of two and a half to three and a half megapascals, with mechanical indices of five to seven and hundred-millisecond pulses at two hundred and twenty kilohertz, transient microvascular permeability changes are a live candidate — and these authors, being who they are, are well placed to assess that.
+
+[PAUSE 400]
+
+[HOST] And second — the one I find most interesting. Memory reconsolidation.
+
+[HOST] Kanen and colleagues raised this in correspondence on the very trial that anchors the whole paper. Their argument: the effect may reflect disruption of memory reconsolidation rather than any persistent change in target excitability. And the logic is strong, because craving was assessed by cue exposure. Which means the intervention was delivered in the context of memory reactivation.
+
+[SKEPTIC] So the ultrasound might have interfered with the restabilisation of a reactivated drug memory. Which would explain a ninety-day effect from one session without needing mechanotransduction at all.
+
+[HOST] Reconsolidation blockade is exactly the sort of mechanism that produces long-lasting behavioural change from a single intervention. It's a serious alternative.
+
+[SKEPTIC] And the paper's response?
+
+[HOST] Absorb it rather than fight it. For two reasons. First, it operates at a different level of explanation: reconsolidation is a systems- and synaptic-level account of why the timing of the intervention matters, while ARISE is a biophysical account of what the ultrasound is doing to the tissue. Those are compatible. They could both be true.
+
+[HOST] And second, it converts into an experiment. Sonicate with versus without cue-induced memory reactivation, at matched acoustic exposure. If reactivation is required, it's a reconsolidation story. If it isn't, it's a target-state story.
+
+[SKEPTIC] That's a clean discriminator.
+
+[HOST] And it should be run.
+
+[PAUSE 500]
+
+[HOST] And then the null hypothesis, which the paper states rather than buries.
+
+[HOST] Eight participants. Open-label. Single-arm. No randomised comparator. A population receiving concurrent treatment. And a self-report primary outcome that is known to be highly placebo-sensitive.
+
+[SKEPTIC] Expectancy and regression to the mean are not fringe concerns in that design.
+
+[HOST] They are not. Everything we've spent the last half hour on is a mechanistic framework built on top of a result that may not survive a controlled trial. That has to be said out loud. And the paper says it.
+
+[PAUSE 900]
+
+[[Chapter 11: Ten ways to be wrong]]
+
+[HOST] Which brings us to the part that makes this science rather than storytelling. Ten predictions, ordered roughly by cost.
+
+[HOST] One: threshold coincidence. In an animal model, the durability of a sonication-induced change should show a step — or at least a steep inflection — as in-situ intensity crosses roughly thirty-four to one hundred and seventy watts per square centimetre. Not a smooth scaling across the whole range. If it's smooth, it's a dose-response curve and the regime claim is dead.
+
+[HOST] Two — and this is the cheap one, the one I'd run first. Frequency-dependence flattening. Remember the cancellation from earlier? It turns a liability into a three-way discriminator. Thermal transduction predicts thresholds that decrease with carrier frequency, because absorption rises. Intramembrane cavitation predicts thresholds that increase with frequency. And bulk radiation pressure predicts thresholds approximately independent of frequency — absorption rise cancelled by focal shrinkage.
+
+[SKEPTIC] And the observed data?
+
+[HOST] Thresholds increase with frequency at low intensity. Which supports cavitation dominance in the conventional regime specifically — and generates the prediction that the frequency dependence should flatten as you raise intensity into the ARISE regime. Cheap, mechanistically decisive, and nobody has done it.
+
+[HOST] Three: differential channel dependence, with identity resolved. Conditional knockout or selective blockade of TRPC6 — and separately Piezo1 — should abolish the persistent component of ARISE-regime effects while leaving acute excitability changes at conventional intensity comparatively intact.
+
+[HOST] Four: direct tension measurement, compartment-resolved. Fluorescent membrane-tension reporters or FRET tension sensors during sonication at three versus a few hundred watts per square centimetre. Effective tension should cross the one-to-five millinewton band only in the latter. And after the modulus discussion, this test is doubly important — because it's the only way to find out what tension actually reaches a channel.
+
+[HOST] Five: glia-first recruitment. Astrocyte-specific versus neuron-specific manipulation of mechanoreceptors should show the astrocytic contribution to persistence rising earlier with intensity. And the ATP-adenosine involvement is separately testable with A1 receptor antagonists.
+
+[HOST] Six: sign of plasticity. ARISE-regime sonication of the accumbens should produce LTD-like changes at cortico-accumbens synapses onto D1 medium spiny neurons — reduced AMPA-to-NMDA ratio, reduced rectification index, removal of GluA2-lacking AMPA receptors — and the behavioural effect should be preventable by blocking that pathway.
+
+[HOST] Seven: the plasticity-cascade signature, with the right markers. CaMKIV and CREB phosphorylation, BDNF induction, beta-one integrin activation, spine actin polymerisation.
+
+[SKEPTIC] Note what changed there. The earlier draft was looking for CaMKII.
+
+[HOST] Which follows from fixing the sign error. If you look for the wrong markers you can falsify your own correct theory.
+
+[HOST] Eight: cavitation dissociation. Passive cavitation detection during effective sonications should show no sub-harmonic or broadband emission. And conversely, deliberately nucleating cavitation at matched pressure should not enhance the persistent effect.
+
+[HOST] Nine: reconsolidation dependence. The experiment we just described.
+
+[HOST] And ten: a pattern-by-amplitude factorial. The two-axis framework predicts that pattern and amplitude contribute multiplicatively. So run a two-by-two: patterned versus non-patterned, conventional versus ARISE intensity. The largest, most persistent effect should be in the patterned-ARISE cell.
+
+[SKEPTIC] That's the whole framework in one experiment.
+
+[HOST] That's the experiment I'd want to see. And two more measurements would strengthen everything independently: a human-geometry finite-element computation of radiation-pressure strain at two hundred and twenty kilohertz in a realistic head model, replacing the mouse extrapolation — and MR-ARFI displacement measurement to validate it.
+
+[PAUSE 900]
+
+[[Close]]
+
+[HOST] So where does that leave us.
+
+[HOST] Ultrasonic neuromodulation is usually described along a single axis of intensity, on which more energy yields more effect. The paper argues for a two-dimensional picture instead. Temporal pattern determines whether an endogenous plasticity rule gets recruited, and with what sign. Effector amplitude determines which biological transducers are available at all.
+
+[HOST] Within that picture, the ARISE regime is the region of parameter space where bulk acoustic radiation pressure becomes quantitatively capable of engaging mechanotransduction directly. Plausibly from tens of watts per square centimetre in thin, high-curvature compartments. In the neighbourhood of a few hundred for whole-cell responses. And the clinical accumbens protocol sits right there — in the neighbourhood of the threshold, not comfortably above it.
+
+[SKEPTIC] And every link in the mechanistic chain is inferential.
+
+[HOST] Every link. No study has shown that radiation-pressure-gated mechanoreceptor calcium entry induces LTP or LTD in brain tissue. The clinical outcome is a behavioural measure from eight open-label participants. The model that characterises the low-intensity regime depends on intramembrane gas pockets whose physical existence remains experimentally unconfirmed. So the contrast between regimes rests on a well-specified model of one regime and a continuum estimate of the other.
+
+[PAUSE 400]
+
+[HOST] And yet the corollary is easier to act on, and it follows from the identical physics. The conventional, cavitation-dominated regime is not a compromised version of ARISE. It is the superior regime for causal brain mapping. It can afford megahertz carriers and millimetre foci. Its biological effect is confined to its acoustic focus rather than leaking out on shear waves. Its onset and offset are sub-millisecond. And its exposure budget lets you do the many sonications that mapping actually requires.
+
+[PAUSE 500]
+
+[HOST] So what the framework offers is not a claim that one regime beats the other. It's a principled account of which regime is for what. A mechanistic rationale for parameter selection in a therapy that currently selects parameters empirically. And a set of ten experiments, most of them affordable, that could show the whole thing to be wrong.
+
+[PAUSE 600]
+
+[HOST] Which, given that we started with two numbers that shouldn't both be true, is a reasonable place to have arrived.
+
+[PAUSE 1200]

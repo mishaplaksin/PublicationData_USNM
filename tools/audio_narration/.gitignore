@@ -1,0 +1,7 @@
+# Kokoro TTS weights (~350 MB) — fetched by setup.sh
+models/
+
+# Rendered audio
+out/
+*.mp3
+*.wav
