@@ -127,6 +127,11 @@ The script is written by hand, not generated. What made the ARISE one work:
   keeps the level constant so quiet passages stay audible over road noise
   without the loud ones making you reach for the volume. Encoded mono at 96
   kbps, which is transparent for speech and keeps an hour under 45 MB.
+- **File size** — an hour at the 96 kbps default is ~41 MiB, which is over the
+  30 MiB limit on some upload and messaging paths. `--bitrate 64k` brings an
+  hour to ~27 MiB and is still inaudibly different on speech; go straight to
+  64k when the file has to be sent somewhere rather than transcoding a 96k
+  render afterwards.
 
 ## Files
 
