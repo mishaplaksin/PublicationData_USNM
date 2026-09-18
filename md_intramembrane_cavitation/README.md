@@ -92,20 +92,28 @@ bilayer stays intact with a dry core (solvent density at the midplane
 0.005 σ⁻³ vs 0.90 σ⁻³ for tails) and is fluid (lipid lateral
 D ≈ 0.014 σ²/τ).
 
-**Unit mapping.** Two independent anchors are used, and they agree on length:
+**Unit mapping.** Length is set by the membrane itself, energy by the
+interfacial tension that governs interleaflet adhesion:
 
 | Anchor | Measurement | Result |
 |---|---|---|
-| Hydrophobic core thickness | CG core ≈ 5.6 σ ↔ 2.8 nm acyl core | σ ≈ 0.50 nm |
-| Solvent bead volume | ρ*_liq = 0.89, 1 bead ≈ 4 H₂O | σ ≈ 0.47 nm |
-| Tail/vapour tension | γ*_tail = 1.908 ± 0.052 ε/σ² ↔ 25 mN/m | **1 ε/σ³ = 26.2 MPa** |
-| Water/vapour tension | γ*_water = 1.856 ± 0.047 ε/σ² ↔ 70 mN/m | 1 ε/σ³ = 75.4 MPa |
+| Hydrophobic core thickness | CG core 4.67 σ (tail ρ > 50 %) ↔ 2.8 nm acyl core | **σ = 0.600 nm** |
+| (head-peak separation, for reference) | 5.69 σ = 3.4 nm | — |
+| Tail/vapour tension | γ*_tail = 1.908 ± 0.052 ε/σ² ↔ 25 mN/m | ε = 4.71·10⁻²¹ J, **1 ε/σ³ = 21.9 MPa** |
+| Water/vapour tension | γ*_water = 1.856 ± 0.047 ε/σ² ↔ 70 mN/m | 1 ε/σ³ = 62.9 MPa |
 
 The model gives its oil and its water nearly the same surface tension (both have
 ε = 1), so it cannot be anchored on both simultaneously. Interleaflet adhesion is
-set by the hydrocarbon/void interface, so the **tail anchor (26.2 MPa) is used
+set by the hydrocarbon interface, so the **tail anchor (21.9 MPa) is used
 throughout and is the conservative choice**; the water anchor would raise every
-reported pressure by 2.9×. Time unit τ ≈ 1.8 ps, so dt ≈ 9 fs.
+reported pressure by 2.9×.
+
+Consequences worth stating plainly, since they are the honest cost of coarse
+graining: one bead occupies 0.242 nm³ (≈ 8 water molecules, mass ≈ 145 u), the
+time unit is τ ≈ 4.3 ps so dt ≈ 21 fs, and kT = 1.0 ε corresponds to 341 K
+rather than the target 309 K — a 10 % temperature mismatch. None of these
+affect the conclusions, which rest on a 2–3 order-of-magnitude separation and,
+in §3–4 of `RESULTS.md`, on no mapping at all.
 
 ## 4. Experiment A — pressure required to separate the leaflets
 

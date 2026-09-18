@@ -131,7 +131,11 @@ def fig_parz(result_json):
     ax[0].set_xlabel("intramembrane gap opening d = 2Z [nm]")
     ax[0].set_ylabel("required rarefaction pressure [MPa]")
     ax[0].set_title("(a) pressure needed to hold the leaflets apart", loc="left")
-    ax[0].grid(axis="y"); ax[0].legend()
+    ax[0].set_xlim(-0.03, max(1.2, d[m].max() * 1.1))
+    ax[0].grid(axis="y")
+    h, l = ax[0].get_legend_handles_labels()
+    order = [l.index("MD (this work)"), l.index("BLS model (A$_R$ = 10$^5$ Pa)")]
+    ax[0].legend([h[i] for i in order], [l[i] for i in order])
 
     # (b) log, showing the scale separation
     pos = P > 0
@@ -144,8 +148,14 @@ def fig_parz(result_json):
                    ha="right", va="bottom", color=INK2, fontsize=7.5)
     ax[1].set_xlabel("intramembrane gap opening d = 2Z [nm]")
     ax[1].set_ylabel("required rarefaction pressure [MPa]")
-    ax[1].set_title("(b) same data, log scale", loc="left")
-    ax[1].grid(axis="y"); ax[1].legend()
+    # analytic slit-cavity thresholds, independent of the CG mapping
+    for val, lab, st in ((39.8, "2γ$_{oil/vap}$/δ = 40 MPa", "-"),
+                         (79.7, "2γ$_{oil/water}$/δ = 80 MPa", "--")):
+        ax[1].axhline(val, color=MUTED, lw=0.9, ls=st)
+        ax[1].annotate(lab, xy=(0.02, val), xycoords=("axes fraction", "data"),
+                       va="bottom", fontsize=7, color=INK2)
+    ax[1].set_title("(b) same data, log scale, with analytic thresholds", loc="left")
+    ax[1].grid(axis="y"); ax[1].legend(loc="lower right", fontsize=7.5)
 
     fig.tight_layout()
     out = os.path.join(FIGS, "fig3_separation_pressure.png")

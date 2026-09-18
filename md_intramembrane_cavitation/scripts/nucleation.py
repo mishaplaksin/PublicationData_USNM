@@ -111,6 +111,31 @@ def bls_configuration_energy(gamma):
     return rows
 
 
+def dome_bound(gamma):
+    """
+    Most generous possible bound, allowing for the BLS dome geometry.
+
+    The MD measurement imposes a laterally uniform leaflet separation, whereas
+    the BLS cavity is a dome clamped at radius a. The dome cannot be cheaper in
+    any way that matters: the interfacial cost scales with the separated area
+    (2 gamma pi a^2) however the surface is shaped, while the work available
+    from the drive is P times the cavity volume, pi a^2 (delta + Z) to leading
+    order. Hence
+
+        P_min(Z) = 2 gamma / (delta + Z),
+
+    which is the smallest rarefaction that could pay for a cavity already
+    expanded to displacement Z -- ignoring membrane tension, bending, the
+    electrostatic attraction and any barrier, all of which only raise it.
+    """
+    rows = []
+    for Z_nm in (0.0, 1.0, 4.0, 8.8):
+        Z = Z_nm * 1e-9
+        P = 2 * gamma / (DELTA + Z)
+        rows.append((Z_nm, P / 1e6, P / PA_US))
+    return rows
+
+
 def main():
     print(__doc__)
     print(f"kT at 36 C = {KT:.3e} J;  one 0.69 MHz half-cycle = {0.5/F_US*1e9:.0f} ns")
@@ -123,6 +148,13 @@ def main():
         print(f"{name:>22} {area_nm2:23.0f} {e_kT:24.3e}")
     print(f"collapse pressure driving the gap shut, 2 gamma/delta = "
           f"{2*0.025/DELTA/1e6:.1f} MPa, vs the model's A_R = 0.1 MPa")
+
+    print("\n=== most generous bound, allowing the BLS dome geometry ===")
+    print("P_min(Z) = 2 gamma/(delta + Z), gamma = 25 mN/m: the least rarefaction")
+    print("that could pay the interfacial cost of a cavity already expanded to Z")
+    print(f"{'Z [nm]':>9} {'P_min [MPa]':>14} {'x PRX amplitude':>18}")
+    for Z_nm, P_MPa, ratio in dome_bound(0.025):
+        print(f"{Z_nm:9.1f} {P_MPa:14.2f} {ratio:18.0f}")
 
     print("\n--- summary ------------------------------------------------------")
     print(f"{'gamma [mN/m]':>13} {'r* at PRX [nm]':>16} {'dG* at PRX [kT]':>17} "
