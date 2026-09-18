@@ -1,0 +1,34 @@
+[
+  {
+    "gamma_mNm": 20.0,
+    "r_star_at_PRX_nm": 124.76295039425092,
+    "dG_at_PRX_kT": 305518.38120814454,
+    "dP_barrier60kT_MPa": 22.877965559083478,
+    "dP_slit_MPa": 31.86489285429778,
+    "dP_rstar_eq_a_MPa": 1.25
+  },
+  {
+    "gamma_mNm": 25.0,
+    "r_star_at_PRX_nm": 155.95368799281366,
+    "dG_at_PRX_kT": 596715.5882971574,
+    "dP_barrier60kT_MPa": 31.972928860631026,
+    "dP_slit_MPa": 39.83111606787222,
+    "dP_rstar_eq_a_MPa": 1.5625
+  },
+  {
+    "gamma_mNm": 30.0,
+    "r_star_at_PRX_nm": 187.14442559137638,
+    "dG_at_PRX_kT": 1031124.5365774876,
+    "dP_barrier60kT_MPa": 42.02950647954134,
+    "dP_slit_MPa": 47.79733928144667,
+    "dP_rstar_eq_a_MPa": 1.8749999999999998
+  },
+  {
+    "gamma_mNm": 50.0,
+    "r_star_at_PRX_nm": 311.9073759856273,
+    "dG_at_PRX_kT": 4773724.706377259,
+    "dP_barrier60kT_MPa": 90.43309924698909,
+    "dP_slit_MPa": 79.66223213574445,
+    "dP_rstar_eq_a_MPa": 3.125
+  }
+]

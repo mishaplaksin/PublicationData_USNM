@@ -1,0 +1,11 @@
+# Trajectory dumps and intermediate configurations are large and regenerable
+# from the scripts; the logs, JSON results and figures are kept.
+runs/*.dump
+runs/*.cfg
+runs/**/*.dump
+runs/**/*.cfg
+runs/*.out
+runs/**/*.out
+src/cgmd
+__pycache__/
+*.pyc

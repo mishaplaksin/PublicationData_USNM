@@ -1,0 +1,50 @@
+{
+  "p_unit_MPa": 21.84,
+  "sigma_nm": 0.6,
+  "runs": [
+    {
+      "log": "pn0.00387.log",
+      "pzz_target_star": 0.00387,
+      "pzz_mean_star": -0.0022060502958579885,
+      "pzz_err_star": 0.011685391835883428,
+      "plat_mean_star": -0.0019620532544378697,
+      "gap_star": 0.8519005621301775,
+      "gap_err_star": 0.010430629809336959,
+      "Lz_star": 17.250339644970413,
+      "apl_star": 1.3625870118343195,
+      "T": 0.9979221893491125,
+      "steps": 67400,
+      "pzz_mean_MPa": -0.048180138461538465,
+      "rarefaction_MPa": -0.08452080000000001,
+      "gap_nm": 0.5111403372781065,
+      "n_solvent_in_core": 0.0,
+      "void_volume_star": 0.0,
+      "void_volume_nm3": 0.0,
+      "void_mean_absz_star": null,
+      "void_fraction_in_core": null,
+      "nframes": 17
+    },
+    {
+      "log": "pn-0.00837.log",
+      "pzz_target_star": -0.00837,
+      "pzz_mean_star": -0.03130308579881656,
+      "pzz_err_star": 0.013891705754577344,
+      "plat_mean_star": -0.0014095488165680476,
+      "gap_star": 0.8111242899408284,
+      "gap_err_star": 0.009694986282148712,
+      "Lz_star": 17.346236686390533,
+      "apl_star": 1.3550309763313608,
+      "T": 0.9972307692307691,
+      "steps": 67400,
+      "pzz_mean_MPa": -0.6836593938461537,
+      "rarefaction_MPa": 0.1828008,
+      "gap_nm": 0.48667457396449704,
+      "n_solvent_in_core": 0.0,
+      "void_volume_star": 0.0,
+      "void_volume_nm3": 0.0,
+      "void_mean_absz_star": null,
+      "void_fraction_in_core": null,
+      "nframes": 17
+    }
+  ]
+}
